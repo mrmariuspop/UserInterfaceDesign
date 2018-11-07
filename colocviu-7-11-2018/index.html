@@ -1,0 +1,59 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form id="form1" name="myForm" onSubmit="validateForm()">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+			
+			<div class="row">
+				<div class = "col-50">
+            <label id="fnamelbl" for="fname"> First Name </label>
+            <input name="aux" type="text" id="fname" name="name" placeholder="" ><p id="nameerror"></p>
+				</div>
+				<div class = "col-50">
+            <label id="lnamelbl" for="email"> Last Name </label>
+            <input name="aux1" type="text" id="lname" name="lastname" placeholder=""><p id="carderror"></p>
+				</div>
+			</div>
+            <label id="emaillbl" for="adr"> Email address</label>
+            <input type="text" id="email" name="emailaddr" placeholder="">
+             
+                <label for="state">Message</label>
+				  <input type="text" id="msg" name="message" placeholder="">
+           
+				<div class="row">
+				<div class = "col-50">
+				<p name="colorat" id="cleft">Characters left </p>
+				</div>
+				<div class = "col-50">
+             
+                 <input id="sub" type="submit" value="Validate" class="btn" "> 
+				</div>
+				 </div>
+				 </div>
+              </div>
+            </div>
+          </div>
+		
+         
+          
+        </div>
+        
+       <p id="demo"></p>
+      </form>
+
+ 
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/
+jquery.min.js"></script>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
